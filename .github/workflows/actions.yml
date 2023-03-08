@@ -2,7 +2,7 @@ name: Spring CI/CD with Maven
 run-name: ${{ github.actor }} is testing CI/CD
 on: [push]
 jobs:
-  CI/CD with Maven:
+  CI-CD with Maven:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code to runner
