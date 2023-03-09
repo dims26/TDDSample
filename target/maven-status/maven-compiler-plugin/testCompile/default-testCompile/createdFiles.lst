@@ -1,0 +1,5 @@
+com/dims/TDDSample/TddSampleApplicationTests.class
+com/dims/TDDSample/IntegrationTest.class
+com/dims/TDDSample/CarRepositoryTest.class
+com/dims/TDDSample/CarControllerTest.class
+com/dims/TDDSample/CarServiceTest.class
