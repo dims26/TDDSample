@@ -13,3 +13,5 @@ jobs:
           distribution: 'temurin'
           java-version: '11'
       - run: ./mvnw clean install
+
+TODO: DISABLE/FIX THE TESTS IN CarRepository, Integration, TddSampleApplication. THEY CAUSE BUILD TO FAIL
