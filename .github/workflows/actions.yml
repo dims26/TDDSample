@@ -12,6 +12,6 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '11'
-      - run: echo "${{ secrets.DOCKER_PASSWORD}}" | docker login -u "${{ secrets.DOCKER_USERNAME}}" --password-stdin
+      - run: echo "${{ secrets.DOCKER_PASSWORD}}" | docker login -u "${{ secrets.DOCKER_USERNAME}}"
       - run: ./mvnw clean install
       - run: ./mvnw deploy jib:build -P deploy-docker
