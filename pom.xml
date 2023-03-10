@@ -55,7 +55,7 @@
 						<artifactId>heroku-maven-plugin</artifactId>
 						<version>3.0.7</version>
 						<configuration>
-							<appName>spring-boot-ci-cd</appName>
+							<appName>github-actions-ci-cd</appName>
 							<processTypes>
 								<web>java $JAVA_OPTS -jar -Dserver.port=$PORT target/${project.build.finalName}.jar</web>
 							</processTypes>
