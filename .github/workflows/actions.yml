@@ -1,4 +1,6 @@
 name: Spring CI/CD with Maven
+env:
+  HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
 run-name: ${{ github.actor }} is testing CI/CD
 on: [push]
 jobs:
