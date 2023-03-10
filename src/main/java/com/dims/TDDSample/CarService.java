@@ -1,11 +1,14 @@
 package com.dims.TDDSample;
 
 import com.dims.TDDSample.domain.Car;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-
+@Service
 public class CarService {
     private CarRepository carRepository;
 
+    @Autowired
     public CarService(CarRepository carRepository) {
         this.carRepository = carRepository;
     }
