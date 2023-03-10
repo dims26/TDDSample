@@ -17,8 +17,8 @@ jobs:
       - name: Build app
         id: build
         run: ./mvnw clean org.jacoco:jacoco-maven-plugin:prepare-agent install
-      - name: Deploy to Dockerhub
-        run: ./mvnw deploy jib:build -P deploy-docker
+      - name: Deploy to Dockerhub and Heroku
+        run: ./mvnw heroku:deploy jib:build -P deploy-heroku,deploy-docker
       - name: Send jacoco report
         continue-on-error: true
         run: bash <(curl -s https://codecov.io/bash)
